@@ -7,6 +7,9 @@
 
 [node name="player" type="CharacterBody2D"]
 scale = Vector2(0.5, 0.5)
+floor_stop_on_slope = false
+floor_constant_speed = true
+floor_snap_length = 2.0
 script = ExtResource("1_belee")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
