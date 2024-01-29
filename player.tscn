@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://bhcleoee465h"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_belee"]
-[ext_resource type="Texture2D" path="res://player.png" id="2_5eau4"]
+[ext_resource type="Texture2D" uid="uid://da8ulw4dw6geb" path="res://player.png" id="2_5eau4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xk462"]
 atlas = ExtResource("2_5eau4")
@@ -94,3 +94,7 @@ animation = &"idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -8)
 shape = SubResource("RectangleShape2D_aix8d")
+
+[node name="coyoteJumpTimer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
