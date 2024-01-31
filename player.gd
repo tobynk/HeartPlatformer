@@ -15,6 +15,7 @@ func _physics_process(delta):
 	apply_air_reistance(input_axis, delta)
 	apply_friction(input_axis,delta)
 	move_and_slide()
+	handle_air_accelertation(input_axis, delta)
 	upadte_amainction(input_axis)
 	var was_on_foor= is_on_floor()
 	move_and_slide()
@@ -42,7 +43,9 @@ func handle_acceration(input_axis,delta):
 		velocity.x = move_toward(velocity.x, movement_data.SPEED * input_axis, movement_data.acceleration * delta)
 
 func handle_air_accelertation(input_axis, delta):
-	if is_on_floor(): return	
+	if is_on_floor(): return
+	if input_axis != 0:
+		velocity.x = move_toward(velocity.x, movement_data.SPEED* input_axis, movement_data.air_acceleration* delta)	
 func apply_friction(input_axis, delta):
 	if input_axis == 0 and is_on_floor():
 		velocity.x = move_toward(velocity.x,0,movement_data.friction*delta)

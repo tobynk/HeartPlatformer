@@ -10,7 +10,7 @@ script = ExtResource("1_r4iwk")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2(-8, 0)
-polygon = PackedVector2Array(8, -64, 16, -64, 16, 64, 72, 64, 72, 80, 88, 80, 96, 88, 120, 88, 128, 104, 40, 120, 24, 152, 168, 144, 184, 104, 224, 96, 240, 80, 248, 56, 264, 48, 280, 40, 312, 40, 328, -56, 328, 184, 8, 184, 8, 0)
+polygon = PackedVector2Array(8, -64, 16, -64, 16, 64, 72, 64, 72, 80, 88, 80, 96, 88, 112, 104, 144, 104, 144, 160, 184, 160, 184, 104, 224, 96, 240, 80, 248, 56, 264, 48, 280, 40, 312, 40, 328, -56, 328, 184, 8, 184, 8, 0)
 
 [node name="Polygon2D" type="Polygon2D" parent="StaticBody2D/CollisionPolygon2D"]
 
