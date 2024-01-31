@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://player.gd" id="1_belee"]
 [ext_resource type="Texture2D" uid="uid://da8ulw4dw6geb" path="res://player.png" id="2_5eau4"]
-[ext_resource type="Resource" uid="uid://bx2b515wtwy6q" path="res://fastermovements.tres" id="2_vcvf8"]
+[ext_resource type="Resource" uid="uid://bxkps1bqad6fh" path="res://78.tres" id="2_jkklj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xk462"]
 atlas = ExtResource("2_5eau4")
@@ -86,7 +86,7 @@ floor_stop_on_slope = false
 floor_constant_speed = true
 floor_snap_length = 3.0
 script = ExtResource("1_belee")
-movement_data = ExtResource("2_vcvf8")
+movement_data = ExtResource("2_jkklj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -10)

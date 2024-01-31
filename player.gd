@@ -10,9 +10,9 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 func _physics_process(delta):
 	apply_gravity(delta)
 	handle_jump()
-	apply_air_reistance(input_axis,delta)
 	var input_axis = Input.get_axis("ui_left", "ui_right")
 	handle_acceration(input_axis, delta)
+	apply_air_reistance(input_axis, delta)
 	apply_friction(input_axis,delta)
 	move_and_slide()
 	upadte_amainction(input_axis)
@@ -37,9 +37,12 @@ func handle_jump():
 			velocity.y = movement_data.JUMP_VELOCITY / 2
 			
 func handle_acceration(input_axis,delta):
+	if not is_on_floor(): return
 	if input_axis!= 0:
 		velocity.x = move_toward(velocity.x, movement_data.SPEED * input_axis, movement_data.acceleration * delta)
-		
+
+func handle_air_accelertation(input_axis, delta):
+	if is_on_floor(): return	
 func apply_friction(input_axis, delta):
 	if input_axis == 0 and is_on_floor():
 		velocity.x = move_toward(velocity.x,0,movement_data.friction*delta)

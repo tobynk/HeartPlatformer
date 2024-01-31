@@ -8,3 +8,6 @@ SPEED = 100.0
 JUMP_VELOCITY = -300.0
 acceleration = 800
 friction = 1000.0
+gravity_scale = 1.0
+air_resitanece = 200.0
+air_acceleration = 400.0
