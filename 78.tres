@@ -4,11 +4,7 @@
 
 [resource]
 script = ExtResource("1_iu52v")
-<<<<<<< Updated upstream
 SPEED = 50.0
-=======
-SPEED = 100.0
->>>>>>> Stashed changes
 JUMP_VELOCITY = -150.0
 acceleration = 800
 friction = 1000.0
