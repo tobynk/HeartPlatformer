@@ -79,7 +79,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aix8d"]
-size = Vector2(12, 16)
+size = Vector2(8.5, 16)
 
 [node name="player" type="CharacterBody2D"]
 floor_stop_on_slope = false
@@ -94,9 +94,12 @@ sprite_frames = SubResource("SpriteFrames_2ng0e")
 animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -8)
+position = Vector2(-0.75, -8)
 shape = SubResource("RectangleShape2D_aix8d")
 
 [node name="coyoteJumpTimer" type="Timer" parent="."]
 wait_time = 0.2
 one_shot = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(2.08165e-12, -32)
