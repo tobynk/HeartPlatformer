@@ -1,2 +1,5 @@
-res://player.tscn
 res://world.tscn
+res://player.gd
+res://player.tscn
+res://spikes.tscn
+res://hazard_area.tscn
