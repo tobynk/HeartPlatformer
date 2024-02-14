@@ -1,16 +1,24 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1707778518
-78.tres::Resource/PlayerMovmentData::4022352131969257605::1707340541::0::1::::<><>::res://PlayerMovementData.gd
-fastermovements.tres::Resource/PlayerMovmentData::4056617990514472622::1707261453::0::1::::<><>::res://PlayerMovementData.gd
+::res://::1707943864
+78.tres::Resource/Resource::4022352131969257605::1707340541::0::1::::<><>::res://PlayerMovementData.gd
+Events.gd::GDScript::-1::1707779590::0::1::::<>Node<>::
+fastermovements.tres::Resource/Resource::4056617990514472622::1707261453::0::1::::<><>::res://PlayerMovementData.gd
 hazard_area.tscn::PackedScene::8853724928381783064::1707435198::0::1::::<><>::
+heart.gd::GDScript::-1::1707779975::0::1::::<>Area2D<>::
 heart.png::CompressedTexture2D::4825215373954386926::1707778518::1707778518::1::::<><>::
+heart.tscn::PackedScene::6894504957951313301::1707942601::0::1::::<><>::uid://ca0mueviuwxgw::::res://heart.png<>res://heart.gd
 icon.svg::CompressedTexture2D::5701235004958336283::1707261453::1707261453::1::::<><>::
+level_completed.tscn::PackedScene::1256174949386930148::1707942601::0::1::::<><>::
+level_tilie_map.tscn::PackedScene::404813812074477223::1707943681::0::1::::<><>::uid://c0i7g4luyrixr::::res://tileset (1).png
 player.gd::GDScript::-1::1707435198::0::1::::<>CharacterBody2D<>::
 player.png::CompressedTexture2D::7228621701031521305::1707261453::1707261453::1::::<><>::
-player.tscn::PackedScene::84780797543863719::1707435224::0::1::::<><>::res://player.gd<>uid://da8ulw4dw6geb::::res://player.png<>uid://bxkps1bqad6fh::::res://78.tres
+player.tscn::PackedScene::84780797543863719::1707942601::0::1::::<><>::res://player.gd<>uid://da8ulw4dw6geb::::res://player.png<>uid://bxkps1bqad6fh::::res://78.tres
 PlayerMovementData.gd::GDScript::-1::1707261453::0::1::::PlayerMovmentData<>Resource<>::
 README.md::TextFile::-1::1707261453::0::1::::<><>::
+slopes.png::CompressedTexture2D::6812213367118512321::1707942726::1707942745::1::::<><>::
+slopes_flipped.png::CompressedTexture2D::2483669285067157902::1707942721::1707942745::1::::<><>::
 spikes.png::CompressedTexture2D::2477969624677480789::1707435198::1707435198::1::::<><>::
-spikes.tscn::PackedScene::4336358132717243215::1707435224::0::1::::<><>::uid://bbkl2eed5wgcj::::res://spikes.png<>uid://dye2s51aj1lee::::res://hazard_area.tscn
-world.gd::GDScript::-1::1707261453::0::1::::<>Node2D<>::
-world.tscn::PackedScene::8091786582799495475::1707435224::0::1::::<><>::res://world.gd<>uid://bhcleoee465h::::res://player.tscn<>uid://bbkl2eed5wgcj::::res://spikes.png<>uid://b21tgj0fggy5d::::res://spikes.tscn
+spikes.tscn::PackedScene::4336358132717243215::1707942601::0::1::::<><>::uid://bbkl2eed5wgcj::::res://spikes.png<>uid://dye2s51aj1lee::::res://hazard_area.tscn
+tileset (1).png::CompressedTexture2D::6546032680012907655::1707942731::1707942745::1::::<><>::
+world.gd::GDScript::-1::1707780285::0::1::::<>Node2D<>::
+world.tscn::PackedScene::8091786582799495475::1707943856::0::1::::<><>::res://world.gd<>uid://bhcleoee465h::::res://player.tscn<>uid://f1dhvlqywtkx::::res://level_tilie_map.tscn<>uid://bbkl2eed5wgcj::::res://spikes.png<>uid://b21tgj0fggy5d::::res://spikes.tscn<>uid://c5h0qvxyjtcmn::::res://heart.tscn<>uid://r5rauxa772jg::::res://level_completed.tscn

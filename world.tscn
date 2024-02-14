@@ -1,66 +1,46 @@
-[gd_scene load_steps=8 format=3 uid="uid://dnjyspp8av7i2"]
+[gd_scene load_steps=7 format=3 uid="uid://dnjyspp8av7i2"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_r4iwk"]
 [ext_resource type="PackedScene" uid="uid://bhcleoee465h" path="res://player.tscn" id="2_0v13i"]
-[ext_resource type="Texture2D" uid="uid://bbkl2eed5wgcj" path="res://spikes.png" id="3_xq4x8"]
+[ext_resource type="PackedScene" uid="uid://f1dhvlqywtkx" path="res://level_tilie_map.tscn" id="2_5kckx"]
 [ext_resource type="PackedScene" uid="uid://b21tgj0fggy5d" path="res://spikes.tscn" id="4_l50pc"]
 [ext_resource type="PackedScene" uid="uid://c5h0qvxyjtcmn" path="res://heart.tscn" id="5_hgc8f"]
 [ext_resource type="PackedScene" uid="uid://r5rauxa772jg" path="res://level_completed.tscn" id="6_m1pf8"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_aokvt"]
-size = Vector2(34, 80)
-
 [node name="World" type="Node2D"]
 script = ExtResource("1_r4iwk")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-collision_mask = 0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
-position = Vector2(-8, 0)
-polygon = PackedVector2Array(8, -64, 32, -64, 32, 64, 48, 64, 72, 80, 88, 80, 96, 88, 112, 104, 144, 104, 144, 152, 184, 152, 184, 104, 224, 96, 264, 88, 288, 88, 288, -56, 288, -64, 328, -64, 328, -56, 328, 184, 8, 184, 8, 0)
-
-[node name="Polygon2D" type="Polygon2D" parent="StaticBody2D/CollisionPolygon2D"]
 
 [node name="player" parent="." instance=ExtResource("2_0v13i")]
 position = Vector2(72, 48)
 
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
-collision_mask = 0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
-position = Vector2(232, -24)
-shape = SubResource("RectangleShape2D_aokvt")
-
-[node name="ColorRect" type="ColorRect" parent="StaticBody2D2"]
-offset_left = 216.0
-offset_top = -64.0
-offset_right = 248.0
-offset_bottom = 16.0
-
-[node name="Spikes2" type="Sprite2D" parent="."]
-position = Vector2(168, 144)
-texture = ExtResource("3_xq4x8")
-
 [node name="Spikes" parent="." instance=ExtResource("4_l50pc")]
-position = Vector2(144, 152)
+position = Vector2(144, 160)
+
+[node name="Spikes4" parent="." instance=ExtResource("4_l50pc")]
+position = Vector2(256, 320)
 
 [node name="Spikes3" parent="." instance=ExtResource("4_l50pc")]
-position = Vector2(136, 152)
+position = Vector2(128, 160)
 
 [node name="Heart" parent="." instance=ExtResource("5_hgc8f")]
-position = Vector2(120, 96)
+position = Vector2(120, 104)
 
 [node name="Heart3" parent="." instance=ExtResource("5_hgc8f")]
-position = Vector2(264, -8)
+position = Vector2(280, 24)
 
 [node name="Heart4" parent="." instance=ExtResource("5_hgc8f")]
-position = Vector2(256, -40)
+position = Vector2(264, -40)
 
 [node name="Heart5" parent="." instance=ExtResource("5_hgc8f")]
 position = Vector2(304, -80)
+
+[node name="LevelTilieMap" parent="." instance=ExtResource("2_5kckx")]
+layer_0/tile_data = PackedInt32Array(-262144, 1, 0, -262143, 131073, 0, -196607, 131073, 1, -196608, 1, 1, -131072, 1, 1, -65536, 1, 1, 0, 1, 1, 1, 131073, 1, -65535, 131073, 1, -131071, 131073, 1, 65536, 1, 1, 131072, 1, 1, 196608, 1, 1, 196609, 131073, 1, 131073, 131073, 1, 65537, 131073, 1, 262144, 1, 1, 327680, 1, 1, 327681, 65537, 1, 262145, 65537, 1, 393217, 65537, 1, 458753, 65537, 1, 524289, 65537, 1, 589825, 65537, 1, 589824, 1, 1, 655361, 65537, 1, 720896, 1, 2, 655360, 1, 1, 720897, 65537, 2, 458752, 1, 1, 393216, 1, 1, 524288, 1, 1, 327682, 65537, 1, 327683, 327681, 0, 327684, 65537, 0, 393220, 65537, 1, 393219, 65537, 1, 393218, 65537, 1, 458754, 65537, 1, 458755, 65537, 1, 458756, 65537, 1, 458757, 65537, 1, 524293, 65537, 1, 524292, 65537, 1, 524291, 65537, 1, 589827, 65537, 1, 589828, 65537, 1, 393221, 65537, 1, 524290, 65537, 1, 589826, 65537, 1, 655362, 65537, 1, 720898, 65537, 2, 720899, 65537, 2, 720900, 65537, 2, 720901, 65537, 2, 720902, 65537, 2, 720903, 65537, 2, 720904, 65537, 2, 720905, 65537, 2, 720906, 65537, 2, 720907, 65537, 2, 720908, 65537, 2, 720909, 65537, 2, 720910, 65537, 2, 720911, 65537, 2, 720912, 65537, 2, 720913, 65537, 2, 720914, 65537, 2, 720915, 131073, 2, 655379, 131073, 1, 655378, 65537, 1, 655377, 65537, 1, 655376, 65537, 1, 655375, 65537, 1, 655374, 65537, 1, 655373, 65537, 1, 655372, 65537, 1, 655371, 393217, 2, 655370, 65537, 0, 655369, 65537, 0, 655368, 65537, 0, 655367, 327681, 4, 655366, 65537, 1, 655365, 65537, 1, 655364, 65537, 1, 655363, 65537, 1, 458759, 131073, 0, 458758, 65537, 1, 524294, 65537, 1, 524295, 131073, 1, 589831, 131073, 1, 589829, 65537, 1, 589830, 65537, 1, 589835, 1, 1, 524299, 1, 1, 458763, 1, 0, 458764, 65537, 1, 458765, 65537, 1, 458766, 65537, 1, 458767, 65537, 1, 458768, 65537, 1, 458769, 65537, 1, 458770, 65537, 1, 458771, 131073, 1, 393230, 65537, 0, 393231, 327681, 0, 393232, 327681, 0, 393233, 65537, 0, 393234, 393217, 2, 393235, 131073, 1, 524307, 131073, 1, 524306, 65537, 1, 524302, 65537, 1, 524301, 65537, 1, 524300, 65537, 1, 589836, 65537, 1, 589837, 65537, 1, 589838, 65537, 1, 589839, 65537, 1, 524303, 65537, 1, 589840, 65537, 1, 589841, 65537, 1, 589842, 65537, 1, 524305, 65537, 1, 524304, 65537, 1, 589843, 131073, 1, 327699, 131073, 1, 327698, 1, 1, 262162, 1, 1, 196626, 1, 1, 131090, 1, 1, 131091, 131073, 1, 196627, 131073, 1, 262163, 131073, 1, -262126, 1, 0, -262125, 131073, 0, -196589, 131073, 1, -131053, 131073, 1, -65517, 131073, 1, 19, 131073, 1, 65555, 131073, 1, -196590, 1, 1, -131054, 1, 1, -65518, 1, 1, 18, 1, 1, 65554, 1, 1, -262131, 1, 0, -262130, 65537, 0, -262129, 131073, 0, -196593, 131073, 1, -196594, 65537, 1, -196595, 1, 1, -131059, 1, 1, -65523, 1, 1, -65522, 65537, 1, -131058, 65537, 1, -131057, 131073, 1, -65521, 131073, 1, 14, 65537, 2, 13, 1, 2, 15, 131073, 2, 393222, 393218, 0, 327685, 393218, 0, 262146, 393218, 0, 393229, 262144, 0, 393228, 196608, 0)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="LevelCompleted" parent="CanvasLayer" instance=ExtResource("6_m1pf8")]
 visible = false
+
+[node name="Spikes2" parent="." instance=ExtResource("4_l50pc")]
+position = Vector2(160, 160)
