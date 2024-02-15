@@ -1,11 +1,10 @@
-class_name PlayerMovmentData
+class_name PlayerMovementData
 extends Resource
- 
-@export var SPEED = 50.0
-@export var  JUMP_VELOCITY = -300.0
-@export var  acceleration = 800
-@export var  friction = 1000.0
-@export var gravity_scale= 2.0
-@export var air_resitanece = 200.0
-@export var air_acceleration=400.0
 
+@export var speed = 100.0
+@export var acceleration = 800.0
+@export var friction = 1000.0
+@export var jump_velocity = -300.0
+@export var gravity_scale = 1.0
+@export var air_resistance = 200.0
+@export var air_acceleration = 400.0

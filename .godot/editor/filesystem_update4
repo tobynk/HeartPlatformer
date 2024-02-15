@@ -1,7 +1,2 @@
 res://world.tscn
-res://player.tscn
-res://spikes.tscn
-res://heart.tscn
-res://level_completed.tscn
-res://level_tilie_map.tscn
-res://world.gd
+res://level_transition.tscn
