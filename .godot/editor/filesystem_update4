@@ -1,3 +1,4 @@
+res://start_menu.tscn
 res://world.tscn
 res://level_transition.tscn
-res://DefaultMovementData.tres
+res://start_menu.gd

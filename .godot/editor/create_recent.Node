@@ -1,10 +1,13 @@
+Button
+VBoxContainer
+CenterContainer
+MarginContainer
 CanvasLayer
 ColorRect
 AnimationPlayer
 Node
 TileMap
 Label
-CenterContainer
 CollisionShape2D
 Sprite2D
 Area2D
