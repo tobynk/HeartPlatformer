@@ -1,0 +1,21 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://0jl2f7axb7wb"]
+
+[ext_resource type="FontFile" uid="uid://ls7nvn4ewqni" path="res://pixel_font.ttf" id="1_vvau2"]
+[ext_resource type="StyleBox" uid="uid://bcxg0uy4d1thl" path="res:// black_9slice.tres" id="2_0h6os"]
+[ext_resource type="StyleBox" uid="uid://dwf1slunwle5p" path="res://white_9slice.tres" id="2_lxp4k"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d3vjx"]
+
+[resource]
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/colors/font_focus_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(1, 1, 1, 1)
+Button/font_sizes/font_size = 6
+Button/fonts/font = ExtResource("1_vvau2")
+Button/styles/disabled = SubResource("StyleBoxFlat_d3vjx")
+Button/styles/focus = ExtResource("2_lxp4k")
+Button/styles/hover = ExtResource("2_lxp4k")
+Button/styles/normal = ExtResource("2_0h6os")
+Button/styles/pressed = ExtResource("2_0h6os")
+Label/font_sizes/font_size = 6
