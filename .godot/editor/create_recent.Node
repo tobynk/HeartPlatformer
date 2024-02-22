@@ -1,10 +1,11 @@
-ColorRect
+Button
+HBoxContainer
+VBoxContainer
 CenterContainer
 Label
+ColorRect
 AnimationPlayer
 Timer
-Button
-VBoxContainer
 MarginContainer
 CanvasLayer
 Node
