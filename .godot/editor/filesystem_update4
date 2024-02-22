@@ -1,6 +1,8 @@
-res://player.tscn
-res://player.gd
 res://world.tscn
 res://level_transition.tscn
 res://start_menu.tscn
 res://level_completed.tscn
+res://player.tscn
+res://world.gd
+res://player.gd
+res://level_one.tscn
